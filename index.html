@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/img/Tatice-Cristal-Intense-Tetris.ico">
+    <title>Tetris AI BY GITSALAH</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="assets/img/git.png" class="git">
+        <a href="https://fontmeme.com/github-font/"><img
+                src="https://fontmeme.com/permalink/200408/10d006d5a66c6076171e70e1c337e88c.png" alt="github-font"
+                border="0"></a>
+    </div>
+    <div class="container">
+
+
+        <div class="game-container">
+            <canvas width="200px" height="400px" id="grid-canvas" class="grid"></canvas>
+            <div class="controls-container">
+                <div id="score-container" class="score-container">0</div>
+                <div id="next-container" class="next-container">
+                    <canvas id="next-canvas" class="next-canvas" width="80px" height="80px"></canvas>
+                </div>
+                <a class="reset-button" onclick="">Start</a>
+                <a id="reset-button" class="reset-button">Reset</a>
+                <a id="ai-button" class="start-ai-button">Play without AI</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/polyfill.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/piece.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/game_manager.js"></script>
+    <script src="js/random_piece_generator.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/tuner.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        var z = new GameManager()
+    </script>
+</body>
+
+</html>
